@@ -9,9 +9,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           <div>
-            <div className="mb-6">
-              <img src={`${import.meta.env.BASE_URL}logo-white.png`} alt="شعار" className="h-28 w-auto rounded-lg" />
-            </div>
+            <img src={`${import.meta.env.BASE_URL}logo-white.png`} alt="شعار" className="h-28 w-auto rounded-lg" />
             <p className="text-gray-400 leading-relaxed mb-6">
               خدمات علاج طبيعي وتأهيل متخصصة للأطفال والنساء والبالغين. رحلتك إلى صحة أفضل تبدأ من هنا.
             </p>
