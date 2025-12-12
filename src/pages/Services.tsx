@@ -7,70 +7,70 @@ export default function Services() {
   const services = [
     {
       icon: Baby,
-      title: 'Pediatric Physiotherapy',
+      title: 'العلاج الطبيعي للأطفال',
       color: 'from-pink-500 to-rose-500',
       image: 'https://images.pexels.com/photos/8613089/pexels-photo-8613089.jpeg?auto=compress&cs=tinysrgb&w=800',
-      description: 'Specialized care for children from infancy through adolescence, addressing developmental and movement disorders.',
+      description: 'رعاية متخصصة للأطفال من الرضاعة حتى المراهقة، لمعالجة اضطرابات النمو والحركة.',
       conditions: [
-        'Developmental motor delays',
-        'Cerebral palsy management',
-        'Clubfoot treatment and correction',
-        'Gait abnormalities and walking issues',
-        'Torticollis (neck muscle tightness)',
-        'Toe walking correction',
-        'Coordination and balance disorders',
-        'Postural problems',
+        'تأخر النمو الحركي',
+        'إدارة الشلل الدماغي',
+        'علاج وتصحيح القدم الحنفاء',
+        'اضطرابات المشي ومشاكل المشي',
+        'علاج الصعر (شد عضلات الرقبة)',
+        'تصحيح المشي على أطراف الأصابع',
+        'اضطرابات التنسيق والتوازن',
+        'مشاكل القوام',
       ],
     },
     {
       icon: Heart,
-      title: "Women's Health Physiotherapy",
+      title: 'العلاج الطبيعي لصحة المرأة',
       color: 'from-purple-500 to-pink-500',
       image: 'https://images.pexels.com/photos/3997986/pexels-photo-3997986.jpeg?auto=compress&cs=tinysrgb&w=800',
-      description: 'Comprehensive support for women through all life stages, from pregnancy to postpartum and beyond.',
+      description: 'دعم شامل للمرأة في جميع مراحل الحياة، من الحمل إلى ما بعد الولادة وما بعدها.',
       conditions: [
-        'Postpartum rehabilitation',
-        'Pelvic floor therapy and strengthening',
-        'Diastasis recti repair',
-        'Pregnancy-related pain management',
-        'Posture correction during and after pregnancy',
-        'Incontinence treatment',
-        'Pre and post C-section recovery',
-        'Return to fitness programs',
+        'التأهيل بعد الولادة',
+        'علاج وتقوية قاع الحوض',
+        'إصلاح انفراق عضلات البطن',
+        'إدارة الآلام المتعلقة بالحمل',
+        'تصحيح القوام أثناء وبعد الحمل',
+        'علاج سلس البول',
+        'التعافي قبل وبعد الولادة القيصرية',
+        'برامج العودة للياقة البدنية',
       ],
     },
     {
       icon: Activity,
-      title: 'Adult Physiotherapy',
+      title: 'العلاج الطبيعي للبالغين',
       color: 'from-teal-500 to-cyan-500',
       image: 'https://images.pexels.com/photos/7659567/pexels-photo-7659567.jpeg?auto=compress&cs=tinysrgb&w=800',
-      description: 'Expert treatment for acute injuries, chronic pain, and post-surgical rehabilitation for adults of all ages.',
+      description: 'علاج متخصص للإصابات الحادة والآلام المزمنة والتأهيل بعد الجراحة للبالغين من جميع الأعمار.',
       conditions: [
-        'Back and neck pain relief',
-        'ACL and sports injury rehabilitation',
-        'Disc herniation treatment',
-        'Joint pain and arthritis management',
-        'Post-fracture recovery',
-        'Shoulder and rotator cuff injuries',
-        'Knee and hip replacement rehab',
-        'Chronic pain management',
+        'تخفيف آلام الظهر والرقبة',
+        'تأهيل الرباط الصليبي والإصابات الرياضية',
+        'علاج الانزلاق الغضروفي',
+        'إدارة آلام المفاصل والتهاب المفاصل',
+        'التعافي بعد الكسور',
+        'إصابات الكتف والكفة المدورة',
+        'التأهيل بعد استبدال الركبة والورك',
+        'إدارة الآلام المزمنة',
       ],
     },
     {
       icon: Brain,
-      title: 'Neurological Rehabilitation',
+      title: 'التأهيل العصبي',
       color: 'from-blue-500 to-indigo-500',
       image: 'https://images.pexels.com/photos/7659580/pexels-photo-7659580.jpeg?auto=compress&cs=tinysrgb&w=800',
-      description: 'Specialized programs for patients recovering from neurological conditions and injuries.',
+      description: 'برامج متخصصة للمرضى الذين يتعافون من حالات وإصابات عصبية.',
       conditions: [
-        'Stroke recovery and rehabilitation',
-        'Multiple sclerosis (MS) management',
-        'Spinal cord injury rehabilitation',
-        'Peripheral nerve injury treatment',
-        'Balance and coordination training',
-        'Functional mobility restoration',
-        'Parkinson\'s disease management',
-        'Traumatic brain injury recovery',
+        'التعافي والتأهيل من السكتة الدماغية',
+        'إدارة التصلب العصبي المتعدد',
+        'التأهيل من إصابات الحبل الشوكي',
+        'علاج إصابات الأعصاب الطرفية',
+        'تدريب التوازن والتنسيق',
+        'استعادة الحركة الوظيفية',
+        'إدارة مرض باركنسون',
+        'التعافي من إصابات الدماغ الرضية',
       ],
     },
   ];
@@ -83,9 +83,9 @@ export default function Services() {
           <div className="absolute bottom-10 right-10 w-96 h-96 bg-white rounded-full blur-3xl" />
         </div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-5xl md:text-6xl font-bold mb-6">Our Services</h1>
+          <h1 className="text-5xl md:text-6xl font-bold mb-6">خدماتنا</h1>
           <p className="text-xl text-teal-50 max-w-3xl mx-auto">
-            Comprehensive physiotherapy solutions tailored to your unique needs and goals
+            حلول علاج طبيعي شاملة مصممة خصيصاً لاحتياجاتك وأهدافك الفريدة
           </p>
         </div>
       </section>
@@ -110,7 +110,7 @@ export default function Services() {
                   <p className="text-gray-600 text-lg leading-relaxed mb-8">{service.description}</p>
 
                   <div className="bg-gradient-to-br from-gray-50 to-white rounded-2xl p-8 shadow-lg border border-gray-100">
-                    <h3 className="text-xl font-bold text-gray-900 mb-4">We Treat:</h3>
+                    <h3 className="text-xl font-bold text-gray-900 mb-4">نعالج:</h3>
                     <ul className="grid grid-cols-1 md:grid-cols-2 gap-3">
                       {service.conditions.map((condition, i) => (
                         <li key={i} className="flex items-start space-x-2">
@@ -125,8 +125,8 @@ export default function Services() {
                     onClick={() => navigate('/contact')}
                     className={`mt-8 bg-gradient-to-r ${service.color} text-white px-8 py-3 rounded-full font-semibold hover:shadow-xl hover:scale-105 transition-all flex items-center space-x-2`}
                   >
-                    <span>Book Now</span>
                     <ArrowRight size={18} />
+                    <span>احجز الآن</span>
                   </button>
                 </div>
 
@@ -145,15 +145,15 @@ export default function Services() {
       <section className="py-20 bg-gradient-to-br from-teal-50 to-cyan-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-white rounded-3xl shadow-2xl p-12 text-center">
-            <h2 className="text-4xl font-bold text-gray-900 mb-6">Not Sure Which Service You Need?</h2>
+            <h2 className="text-4xl font-bold text-gray-900 mb-6">لست متأكداً من الخدمة التي تحتاجها؟</h2>
             <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
-              Our expert team will assess your condition and recommend the most appropriate treatment plan for you.
+              سيقوم فريقنا المتخصص بتقييم حالتك والتوصية بخطة العلاج الأنسب لك.
             </p>
             <button
               onClick={() => navigate('/contact')}
               className="bg-gradient-to-r from-teal-600 to-cyan-600 text-white px-10 py-4 rounded-full text-lg font-semibold hover:shadow-xl hover:scale-105 transition-all"
             >
-              Schedule a Consultation
+              حدد موعد استشارة
             </button>
           </div>
         </div>

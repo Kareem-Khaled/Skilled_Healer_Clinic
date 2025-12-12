@@ -4,79 +4,79 @@ export default function Techniques() {
   const techniques = [
     {
       icon: Zap,
-      title: 'Dry Needling',
+      title: 'الوخز بالإبر الجاف',
       image: 'https://images.pexels.com/photos/7659576/pexels-photo-7659576.jpeg?auto=compress&cs=tinysrgb&w=800',
-      description: 'Advanced technique using fine needles to release muscle tension and trigger points, promoting pain relief and improved function.',
+      description: 'تقنية متقدمة تستخدم إبر u0627ً دقيقة لتحرير شد العضلات ونقاط الزناد، مما يعزز تخفيف الألم وتحسين الوظيفة.',
       benefits: [
-        'Reduces muscle pain and tightness',
-        'Improves range of motion',
-        'Accelerates healing process',
-        'Treats chronic pain conditions',
+        'يقلل ألم وشد العضلات',
+        'يحسّن مدى الحركة',
+        'يسرّع عملية الشفاء',
+        'يعالج حالات الألم المزمن',
       ],
       color: 'from-orange-500 to-red-500',
     },
     {
       icon: Radio,
-      title: 'Electrotherapy (TENS, EMS)',
+      title: 'العلاج الكهربائي (TENS، EMS)',
       image: 'https://images.pexels.com/photos/7659566/pexels-photo-7659566.jpeg?auto=compress&cs=tinysrgb&w=800',
-      description: 'Therapeutic use of electrical stimulation to manage pain, reduce inflammation, and strengthen muscles through TENS and EMS modalities.',
+      description: 'الاستخدام العلاجي للتحفيز الكهربائي لإدارة الألم وتقليل الالتهاب وتقوية العضلات من خلال أساليب TENS وEMS.',
       benefits: [
-        'Effective pain management',
-        'Reduces swelling and inflammation',
-        'Muscle re-education and strengthening',
-        'Non-invasive treatment option',
+        'إدارة فعالة للألم',
+        'يقلل التورم والالتهاب',
+        'إعادة تأهيل وتقوية العضلات',
+        'خيار علاجي غير جراحي',
       ],
       color: 'from-blue-500 to-cyan-500',
     },
     {
       icon: Hand,
-      title: 'Manual Therapy',
+      title: 'العلاج اليدوي',
       image: 'https://images.pexels.com/photos/7659591/pexels-photo-7659591.jpeg?auto=compress&cs=tinysrgb&w=800',
-      description: 'Hands-on techniques including joint mobilization, soft tissue massage, and myofascial release to restore mobility and reduce pain.',
+      description: 'تقنيات يدوية تشمل تحريك المفاصل وتدليك الأنسجة الرخوة وتحرير اللفافة العضلية لاستعادة الحركة وتقليل الألم.',
       benefits: [
-        'Improves joint mobility',
-        'Relieves soft tissue restrictions',
-        'Enhances circulation',
-        'Reduces pain and stiffness',
+        'يحسّن حركة المفاصل',
+        'يخفف القيود في الأنسجة الرخوة',
+        'يعزز الدورة الدموية',
+        'يقلل الألم والتيبس',
       ],
       color: 'from-teal-500 to-green-500',
     },
     {
       icon: Activity,
-      title: 'Manual Traction',
+      title: 'الشد اليدوي',
       image: 'https://images.pexels.com/photos/7659573/pexels-photo-7659573.jpeg?auto=compress&cs=tinysrgb&w=800',
-      description: 'Gentle manual stretching technique to decompress spinal joints, relieve nerve pressure, and reduce pain in the neck and back.',
+      description: 'تقنية شد يدوي لطيفة لتخفيف الضغط عن المفاصل الفقرية وتخفيف ضغط الأعصاب وتقليل الألم في الرقبة والظهر.',
       benefits: [
-        'Relieves nerve compression',
-        'Reduces disc pressure',
-        'Alleviates neck and back pain',
-        'Improves spinal mobility',
+        'يخفف ضغط الأعصاب',
+        'يقلل الضغط على الأقراص',
+        'يخفف آلام الرقبة والظهر',
+        'يحسّن حركة العمود الفقري',
       ],
       color: 'from-purple-500 to-pink-500',
     },
     {
       icon: Waves,
-      title: 'Ultrasound Therapy',
+      title: 'العلاج بالموجات فوق الصوتية',
       image: 'https://images.pexels.com/photos/7659578/pexels-photo-7659578.jpeg?auto=compress&cs=tinysrgb&w=800',
-      description: 'Therapeutic ultrasound uses sound waves to promote tissue healing, reduce inflammation, and improve blood flow to injured areas.',
+      description: 'تستخدم الموجات فوق الصوتية العلاجية موجات صوتية لتعزيز شفاء الأنسجة وتقليل الالتهاب وتحسين تدفق الدم إلى المناطق المصابة.',
       benefits: [
-        'Accelerates tissue repair',
-        'Reduces inflammation',
-        'Improves blood circulation',
-        'Treats deep tissue injuries',
+        'يسرّع إصلاح الأنسجة',
+        'يقلل الالتهاب',
+        'يحسّن الدورة الدموية',
+        'يعالج إصابات الأنسجة العميقة',
       ],
       color: 'from-indigo-500 to-blue-500',
     },
     {
       icon: Dumbbell,
-      title: 'Mobility & Strength Programs',
+      title: 'برامج الحركة والقوة',
       image: 'https://images.pexels.com/photos/7659568/pexels-photo-7659568.jpeg?auto=compress&cs=tinysrgb&w=800',
-      description: 'Customized exercise programs designed to restore function, build strength, improve flexibility, and prevent future injuries.',
+      description: 'برامج تمارين مخصصة لاستعادة الوظيفة وبناء القوة وتحسين المرونة والوقاية من الإصابات المستقبلية.',
       benefits: [
-        'Increases functional strength',
-        'Enhances flexibility and balance',
-        'Prevents re-injury',
-        'Improves overall fitness',
+        'يزيد القوة الوظيفية',
+        'يعزز المرونة والتوازن',
+        'يمنع الإصابة المتكررة',
+        'يحسّن اللياقة البدنية العامة',
       ],
       color: 'from-green-500 to-teal-500',
     },
@@ -90,9 +90,9 @@ export default function Techniques() {
           <div className="absolute bottom-10 right-10 w-96 h-96 bg-white rounded-full blur-3xl" />
         </div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-5xl md:text-6xl font-bold mb-6">Treatment Techniques</h1>
+          <h1 className="text-5xl md:text-6xl font-bold mb-6">تقنيات العلاج</h1>
           <p className="text-xl text-teal-50 max-w-3xl mx-auto">
-            Advanced, evidence-based methods for optimal recovery and rehabilitation
+            أساليب متقدمة قائمة على الأدلة للتعافي والتأهيل الأمثل
           </p>
         </div>
       </section>
@@ -101,7 +101,7 @@ export default function Techniques() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              We combine traditional manual therapy with cutting-edge technology to provide comprehensive treatment tailored to your specific condition and goals.
+              ندمج العلاج اليدوي التقليدي مع التكنولوجيا الحديثة لتقديم علاج شامل مصمم خصيصاً لحالتك وأهدافك.
             </p>
           </div>
 
@@ -128,7 +128,7 @@ export default function Techniques() {
                   <p className="text-gray-600 leading-relaxed mb-6">{technique.description}</p>
 
                   <div className="bg-gradient-to-br from-gray-50 to-white rounded-xl p-6 border border-gray-100">
-                    <h4 className="font-bold text-gray-900 mb-4 text-lg">Key Benefits:</h4>
+                    <h4 className="font-bold text-gray-900 mb-4 text-lg">الفوائد الرئيسية:</h4>
                     <ul className="space-y-3">
                       {technique.benefits.map((benefit, i) => (
                         <li key={i} className="flex items-start space-x-3">
@@ -156,15 +156,15 @@ export default function Techniques() {
                 style={{ backgroundImage: 'url(https://images.pexels.com/photos/7659589/pexels-photo-7659589.jpeg?auto=compress&cs=tinysrgb&w=800)' }}
               />
               <div className="p-12 flex flex-col justify-center">
-                <h2 className="text-4xl font-bold text-gray-900 mb-6">Personalized Treatment Plans</h2>
+                <h2 className="text-4xl font-bold text-gray-900 mb-6">خطط علاج مخصصة</h2>
                 <p className="text-gray-600 leading-relaxed mb-6">
-                  Every patient is unique, and so is every treatment plan. Our expert team will assess your condition and combine the most effective techniques to achieve optimal results.
+                  كل مريض فريد، وكذلك كل خطة علاج. سيقيم فريقنا المتخصص حالتك ويجمع بين التقنيات الأكثر فعالية لتحقيق نتائج مثالية.
                 </p>
                 <p className="text-gray-600 leading-relaxed mb-8">
-                  We continuously monitor your progress and adjust your treatment protocol to ensure you're always on the fastest path to recovery.
+                  نراقب تقدمك باستمرار ونعدّل بروتوكول العلاج لضمان أنك دائماً على أسرع طريق للتعافي.
                 </p>
                 <button className="bg-gradient-to-r from-teal-600 to-cyan-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:shadow-xl hover:scale-105 transition-all self-start">
-                  Schedule Your Assessment
+                  حدد موعد تقييمك
                 </button>
               </div>
             </div>
@@ -174,9 +174,9 @@ export default function Techniques() {
 
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-4xl font-bold text-gray-900 mb-6">State-of-the-Art Equipment</h2>
+          <h2 className="text-4xl font-bold text-gray-900 mb-6">معدات حديثة</h2>
           <p className="text-xl text-gray-600 mb-12 max-w-3xl mx-auto">
-            Our clinic is equipped with the latest technology and therapeutic tools to ensure you receive the highest quality care.
+            عيادتنا مجهزة بأحدث التقنيات والأدوات العلاجية لضمان حصولك على رعاية بأعلى جودة.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">

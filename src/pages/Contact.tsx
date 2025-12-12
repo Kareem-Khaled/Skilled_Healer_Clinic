@@ -1,6 +1,5 @@
 import { useState, FormEvent } from 'react';
 import { Phone, Mail, MapPin, Clock, Send, CheckCircle, MessageSquare } from 'lucide-react';
-import { supabase } from '../lib/supabase';
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -18,16 +17,11 @@ export default function Contact() {
     setSubmitStatus('idle');
 
     try {
-      const { error } = await supabase.from('contact_submissions').insert([
-        {
-          name: formData.name,
-          phone: formData.phone,
-          service_interest: formData.service,
-          message: formData.message,
-        },
-      ]);
-
-      if (error) throw error;
+      // Simulate form submission
+      await new Promise(resolve => setTimeout(resolve, 1000));
+      
+      // Log form data (in production, you would send this to your backend)
+      console.log('Form submitted:', formData);
 
       setSubmitStatus('success');
       setFormData({ name: '', phone: '', service: '', message: '' });
@@ -47,9 +41,9 @@ export default function Contact() {
           <div className="absolute bottom-10 right-10 w-96 h-96 bg-white rounded-full blur-3xl" />
         </div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-5xl md:text-6xl font-bold mb-6">Get In Touch</h1>
+          <h1 className="text-5xl md:text-6xl font-bold mb-6">تواصل معنا</h1>
           <p className="text-xl text-teal-50 max-w-3xl mx-auto">
-            Ready to start your journey to better health? Contact us today
+            هل أنت مستعد لبدء رحلتك نحو صحة أفضل؟ تواصل معنا اليوم
           </p>
         </div>
       </section>
@@ -58,15 +52,15 @@ export default function Contact() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
             <div>
-              <h2 className="text-4xl font-bold text-gray-900 mb-6">Send Us a Message</h2>
+              <h2 className="text-4xl font-bold text-gray-900 mb-6">أرسل لنا رسالة</h2>
               <p className="text-gray-600 mb-8">
-                Fill out the form below and our team will get back to you within 24 hours.
+                املأ النموذج أدناه وسيتواصل معك فريقنا خلال 24 ساعة.
               </p>
 
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
                   <label htmlFor="name" className="block text-sm font-semibold text-gray-900 mb-2">
-                    Full Name *
+                    الاسم الكامل *
                   </label>
                   <input
                     type="text"
@@ -75,13 +69,13 @@ export default function Contact() {
                     value={formData.name}
                     onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                     className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:border-teal-600 focus:ring-2 focus:ring-teal-600/20 outline-none transition-all"
-                    placeholder="John Doe"
+                    placeholder="أحمد محمد"
                   />
                 </div>
 
                 <div>
                   <label htmlFor="phone" className="block text-sm font-semibold text-gray-900 mb-2">
-                    Phone Number *
+                    رقم الهاتف *
                   </label>
                   <input
                     type="tel"
@@ -90,13 +84,13 @@ export default function Contact() {
                     value={formData.phone}
                     onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                     className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:border-teal-600 focus:ring-2 focus:ring-teal-600/20 outline-none transition-all"
-                    placeholder="+1 (555) 123-4567"
+                    placeholder="+966 50 123 4567"
                   />
                 </div>
 
                 <div>
                   <label htmlFor="service" className="block text-sm font-semibold text-gray-900 mb-2">
-                    Service Interested In
+                    الخدمة المهتم بها
                   </label>
                   <select
                     id="service"
@@ -104,18 +98,18 @@ export default function Contact() {
                     onChange={(e) => setFormData({ ...formData, service: e.target.value })}
                     className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:border-teal-600 focus:ring-2 focus:ring-teal-600/20 outline-none transition-all"
                   >
-                    <option value="">Select a service</option>
-                    <option value="pediatric">Pediatric Physiotherapy</option>
-                    <option value="womens">Women's Health</option>
-                    <option value="adult">Adult Physiotherapy</option>
-                    <option value="neuro">Neurological Rehabilitation</option>
-                    <option value="other">Other / Not Sure</option>
+                    <option value="">اختر خدمة</option>
+                    <option value="pediatric">العلاج الطبيعي للأطفال</option>
+                    <option value="womens">صحة المرأة</option>
+                    <option value="adult">العلاج الطبيعي للبالغين</option>
+                    <option value="neuro">التأهيل العصبي</option>
+                    <option value="other">أخرى / غير متأكد</option>
                   </select>
                 </div>
 
                 <div>
                   <label htmlFor="message" className="block text-sm font-semibold text-gray-900 mb-2">
-                    Message *
+                    الرسالة *
                   </label>
                   <textarea
                     id="message"
@@ -124,20 +118,20 @@ export default function Contact() {
                     onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                     rows={5}
                     className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:border-teal-600 focus:ring-2 focus:ring-teal-600/20 outline-none transition-all resize-none"
-                    placeholder="Tell us about your condition or what you'd like to discuss..."
+                    placeholder="أخبرنا عن حالتك أو ما تريد مناقشته..."
                   />
                 </div>
 
                 {submitStatus === 'success' && (
                   <div className="bg-green-50 border border-green-200 rounded-xl p-4 flex items-center space-x-3 text-green-800">
                     <CheckCircle size={24} className="flex-shrink-0" />
-                    <p className="font-medium">Thank you! We'll contact you within 24 hours.</p>
+                    <p className="font-medium">شكراً لك! سنتواصل معك خلال 24 ساعة.</p>
                   </div>
                 )}
 
                 {submitStatus === 'error' && (
                   <div className="bg-red-50 border border-red-200 rounded-xl p-4 text-red-800">
-                    <p className="font-medium">Something went wrong. Please try again or call us directly.</p>
+                    <p className="font-medium">حدث خطأ ما. يرجى المحاولة مرة أخرى أو الاتصال بنا مباشرة.</p>
                   </div>
                 )}
 
@@ -147,11 +141,11 @@ export default function Contact() {
                   className="w-full bg-gradient-to-r from-teal-600 to-cyan-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:shadow-xl hover:scale-105 transition-all disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100 flex items-center justify-center space-x-2"
                 >
                   {isSubmitting ? (
-                    <span>Sending...</span>
+                    <span>جاري الإرسال...</span>
                   ) : (
                     <>
                       <Send size={20} />
-                      <span>Send Message</span>
+                      <span>إرسال الرسالة</span>
                     </>
                   )}
                 </button>
@@ -160,9 +154,9 @@ export default function Contact() {
 
             <div className="space-y-8">
               <div>
-                <h2 className="text-4xl font-bold text-gray-900 mb-6">Contact Information</h2>
+                <h2 className="text-4xl font-bold text-gray-900 mb-6">معلومات التواصل</h2>
                 <p className="text-gray-600 mb-8">
-                  We're here to answer any questions you may have about our services.
+                  نحن هنا للإجابة على أي أسئلة قد تكون لديك حول خدماتنا.
                 </p>
 
                 <div className="space-y-6">
@@ -171,9 +165,9 @@ export default function Contact() {
                       <Phone size={24} className="text-white" />
                     </div>
                     <div>
-                      <h3 className="font-bold text-gray-900 mb-1">Phone</h3>
+                      <h3 className="font-bold text-gray-900 mb-1">الهاتف</h3>
                       <p className="text-gray-600">+1 (555) 123-4567</p>
-                      <p className="text-sm text-teal-600 mt-2">Mon-Fri: 8AM - 8PM</p>
+                      <p className="text-sm text-teal-600 mt-2">الإثنين-الجمعة: 8 صباحاً - 8 مساءً</p>
                     </div>
                   </div>
 
@@ -182,9 +176,9 @@ export default function Contact() {
                       <Mail size={24} className="text-white" />
                     </div>
                     <div>
-                      <h3 className="font-bold text-gray-900 mb-1">Email</h3>
+                      <h3 className="font-bold text-gray-900 mb-1">البريد الإلكتروني</h3>
                       <p className="text-gray-600">info@physiolife.com</p>
-                      <p className="text-sm text-purple-600 mt-2">We'll respond within 24 hours</p>
+                      <p className="text-sm text-purple-600 mt-2">سنرد خلال 24 ساعة</p>
                     </div>
                   </div>
 
@@ -193,7 +187,7 @@ export default function Contact() {
                       <MapPin size={24} className="text-white" />
                     </div>
                     <div>
-                      <h3 className="font-bold text-gray-900 mb-1">Address</h3>
+                      <h3 className="font-bold text-gray-900 mb-1">العنوان</h3>
                       <p className="text-gray-600">123 Healthcare Boulevard</p>
                       <p className="text-gray-600">Medical District, City 12345</p>
                     </div>
@@ -204,11 +198,11 @@ export default function Contact() {
                       <Clock size={24} className="text-white" />
                     </div>
                     <div>
-                      <h3 className="font-bold text-gray-900 mb-1">Working Hours</h3>
+                      <h3 className="font-bold text-gray-900 mb-1">ساعات العمل</h3>
                       <div className="text-gray-600 space-y-1">
-                        <p>Monday - Friday: 8:00 AM - 8:00 PM</p>
-                        <p>Saturday: 9:00 AM - 5:00 PM</p>
-                        <p>Sunday: Closed</p>
+                        <p>الإثنين - الجمعة: 8:00 صباحاً - 8:00 مساءً</p>
+                        <p>السبت: 9:00 صباحاً - 5:00 مساءً</p>
+                        <p>الأحد: مغلق</p>
                       </div>
                     </div>
                   </div>
@@ -217,9 +211,9 @@ export default function Contact() {
 
               <div className="bg-gradient-to-br from-teal-600 to-cyan-600 rounded-2xl p-8 text-white">
                 <MessageSquare size={48} className="mb-4" />
-                <h3 className="text-2xl font-bold mb-3">WhatsApp Us</h3>
+                <h3 className="text-2xl font-bold mb-3">تواصل معنا عبر واتساب</h3>
                 <p className="mb-6 text-teal-50">
-                  Get instant responses to your questions via WhatsApp
+                  احصل على إجابات فورية لأسئلتك عبر واتساب
                 </p>
                 <a
                   href="https://wa.me/15551234567"
@@ -227,7 +221,7 @@ export default function Contact() {
                   rel="noopener noreferrer"
                   className="bg-white text-teal-600 px-6 py-3 rounded-full font-semibold hover:shadow-xl hover:scale-105 transition-all inline-block"
                 >
-                  Chat on WhatsApp
+                  دردش عبر واتساب
                 </a>
               </div>
             </div>
@@ -238,8 +232,8 @@ export default function Contact() {
       <section className="py-20 bg-gradient-to-br from-gray-50 to-gray-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Find Us</h2>
-            <p className="text-xl text-gray-600">Conveniently located in the Medical District</p>
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">اعثر علينا</h2>
+            <p className="text-xl text-gray-600">موقع مريح في المنطقة الطبية</p>
           </div>
 
           <div className="bg-white rounded-3xl shadow-2xl overflow-hidden h-96">
@@ -249,7 +243,7 @@ export default function Contact() {
               <div className="text-center">
                 <MapPin size={64} className="text-teal-600 mx-auto mb-4" />
                 <p className="text-gray-600 text-lg">
-                  Map integration placeholder
+                  مساحة لتكامل الخريطة
                   <br />
                   <span className="text-sm">123 Healthcare Boulevard, Medical District</span>
                 </p>

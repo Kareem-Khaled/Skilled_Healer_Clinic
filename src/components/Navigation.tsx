@@ -16,12 +16,12 @@ export default function Navigation() {
   }, []);
 
   const links = [
-    { path: '/', label: 'Home' },
-    { path: '/about', label: 'About' },
-    { path: '/services', label: 'Services' },
-    { path: '/team', label: 'Our Team' },
-    { path: '/techniques', label: 'Techniques' },
-    { path: '/contact', label: 'Contact' },
+    { path: '/', label: 'الرئيسية' },
+    { path: '/about', label: 'من نحن' },
+    { path: '/services', label: 'خدماتنا' },
+    { path: '/team', label: 'فريقنا' },
+    { path: '/techniques', label: 'التقنيات' },
+    { path: '/contact', label: 'اتصل بنا' },
   ];
 
   const handleNavigate = (path: string) => {
@@ -32,21 +32,16 @@ export default function Navigation() {
   return (
     <nav
       className={`fixed w-full top-0 z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-white shadow-lg py-4' : 'bg-white/95 backdrop-blur-sm py-6'
+        isScrolled ? 'bg-white shadow-lg py-2' : 'bg-white/95 backdrop-blur-sm py-3'
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
           <div
             onClick={() => handleNavigate('/')}
-            className="flex items-center space-x-2 cursor-pointer group"
+            className="flex items-center cursor-pointer group"
           >
-            <div className="w-10 h-10 bg-gradient-to-br from-teal-500 to-cyan-600 rounded-lg flex items-center justify-center transform group-hover:scale-105 transition-transform">
-              <span className="text-white font-bold text-xl">P</span>
-            </div>
-            <span className="text-2xl font-bold bg-gradient-to-r from-teal-600 to-cyan-600 bg-clip-text text-transparent">
-              PhysioLife
-            </span>
+            <img src="/logo.png" alt="شعار" className="h-24 w-auto rounded-lg transform group-hover:scale-105 transition-transform" />
           </div>
 
           <div className="hidden md:flex items-center space-x-8">
@@ -62,7 +57,7 @@ export default function Navigation() {
               >
                 {link.label}
                 <span
-                  className={`absolute -bottom-1 left-0 w-full h-0.5 bg-teal-600 transform origin-left transition-transform ${
+                  className={`absolute -bottom-1 right-0 w-full h-0.5 bg-teal-600 transform origin-right transition-transform ${
                     currentPath === link.path ? 'scale-x-100' : 'scale-x-0 group-hover:scale-x-100'
                   }`}
                 />
@@ -72,8 +67,8 @@ export default function Navigation() {
               onClick={() => handleNavigate('/contact')}
               className="bg-gradient-to-r from-teal-600 to-cyan-600 text-white px-6 py-2.5 rounded-full font-medium hover:shadow-lg hover:scale-105 transition-all flex items-center space-x-2"
             >
+              <span>احجز الآن</span>
               <Phone size={18} />
-              <span>Book Now</span>
             </button>
           </div>
 
@@ -104,8 +99,8 @@ export default function Navigation() {
               onClick={() => handleNavigate('/contact')}
               className="w-full bg-gradient-to-r from-teal-600 to-cyan-600 text-white px-6 py-3 rounded-full font-medium hover:shadow-lg transition-all flex items-center justify-center space-x-2"
             >
+              <span>احجز الآن</span>
               <Phone size={18} />
-              <span>Book Now</span>
             </button>
           </div>
         )}

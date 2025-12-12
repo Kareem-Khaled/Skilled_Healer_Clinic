@@ -3,44 +3,44 @@ import { Award, GraduationCap, Heart } from 'lucide-react';
 export default function Team() {
   const doctors = [
     {
-      name: 'Dr. Abd-Elrahman',
+      name: 'د. عبدالرحمن',
       image: 'https://images.pexels.com/photos/5215024/pexels-photo-5215024.jpeg?auto=compress&cs=tinysrgb&w=600',
-      specialization: ['Pediatrics', 'Neurology', 'Orthopedics'],
-      bio: 'With over 10 years of experience in pediatric physiotherapy, Dr. Abd-Elrahman specializes in developmental disorders and neurological conditions in children. His patient-centered approach and expertise in early intervention have helped hundreds of families achieve remarkable outcomes.',
-      education: 'PhD in Pediatric Physiotherapy',
-      certifications: ['Board Certified Pediatric Specialist', 'NDT Certified'],
+      specialization: ['طب الأطفال', 'الأعصاب', 'العظام'],
+      bio: 'مع أكثر من 10 سنوات من الخبرة في العلاج الطبيعي للأطفال، يتخصص الدكتور عبدالرحمن في اضطرابات النمو والحالات العصبية عند الأطفال. نهجه المتمحور حول المريض وخبرته في التدخل المبكر ساعدا مئات العائلات على تحقيق نتائج متميزة.',
+      education: 'دكتوراه في العلاج الطبيعي للأطفال',
+      certifications: ['أخصائي طب الأطفال معتمد من المجلس', 'معتمد NDT'],
     },
     {
-      name: 'Dr. Abd-Allah',
+      name: 'د. عبدالله',
       image: 'https://images.pexels.com/photos/5215093/pexels-photo-5215093.jpeg?auto=compress&cs=tinysrgb&w=600',
-      specialization: ['Pediatrics', 'Neurology', 'Orthopedics'],
-      bio: 'Dr. Abd-Allah brings extensive experience in treating complex neurological and orthopedic conditions in both children and adults. His holistic approach integrates manual therapy with advanced rehabilitation techniques for comprehensive care.',
-      education: 'Master in Neurological Rehabilitation',
-      certifications: ['Certified Manual Therapist', 'Orthopedic Clinical Specialist'],
+      specialization: ['طب الأطفال', 'الأعصاب', 'العظام'],
+      bio: 'يقدم الدكتور عبدالله خبرة واسعة في علاج الحالات العصبية والعظمية المعقدة عند الأطفال والبالغين. يدمج نهجه الشامل العلاج اليدوي مع تقنيات التأهيل المتقدمة لرعاية شاملة.',
+      education: 'ماجستير في التأهيل العصبي',
+      certifications: ['معالج يدوي معتمد', 'أخصائي سريري في العظام'],
     },
     {
-      name: 'Dr. Abd-Alaziz',
+      name: 'د. عبدالعزيز',
       image: 'https://images.pexels.com/photos/5452293/pexels-photo-5452293.jpeg?auto=compress&cs=tinysrgb&w=600',
-      specialization: ['Neurology', 'Orthopedics'],
-      bio: 'Specializing in neurological rehabilitation and orthopedic recovery, Dr. Abd-Alaziz has successfully treated patients recovering from stroke, spinal injuries, and complex orthopedic surgeries. His evidence-based practice ensures optimal functional outcomes.',
-      education: 'Master in Orthopedic Physiotherapy',
-      certifications: ['Certified Stroke Rehabilitation Specialist', 'Advanced Orthopedic Manual Therapist'],
+      specialization: ['الأعصاب', 'العظام'],
+      bio: 'متخصص في التأهيل العصبي والتعافي من العظام، عالج الدكتور عبدالعزيز بنجاح المرضى الذين يتعافون من السكتة الدماغية وإصابات العمود الفقري والجراحات العظمية المعقدة. تضمن ممارسته القائمة على الأدلة نتائج وظيفية مثالية.',
+      education: 'ماجستير في العلاج الطبيعي العظمي',
+      certifications: ['أخصائي تاهيل السكتة الدماغية معتمد', 'معالج يدوي متقدم في العظام'],
     },
     {
-      name: 'Dr. Rakan',
+      name: 'د. ركان',
       image: 'https://images.pexels.com/photos/5215028/pexels-photo-5215028.jpeg?auto=compress&cs=tinysrgb&w=600',
-      specialization: ['Pediatrics', 'Neurology', 'Orthopedics'],
-      bio: "Dr. Rakan's multidisciplinary expertise spans pediatric care, neurological rehabilitation, and orthopedic therapy. Known for his compassionate approach, he excels at building rapport with patients of all ages and creating effective treatment programs.",
-      education: 'Master in Physiotherapy',
-      certifications: ['Pediatric Developmental Specialist', 'Sports Injury Certified'],
+      specialization: ['طب الأطفال', 'الأعصاب', 'العظام'],
+      bio: 'تمتد خبرة الدكتور ركان متعددة التخصصات لتشمل رعاية الأطفال والتأهيل العصبي وعلاج العظام. معروف بنهجه الرحيم، يتفوق في بناء علاقة ودية مع المرضى من جميع الأعمار وإعداد برامج علاجية فعالة.',
+      education: 'ماجستير في العلاج الطبيعي',
+      certifications: ['أخصائي النمو عند الأطفال', 'معتمد في الإصابات الرياضية'],
     },
     {
-      name: 'Dr. Ahlam',
+      name: 'د. أحلام',
       image: 'https://images.pexels.com/photos/5207236/pexels-photo-5207236.jpeg?auto=compress&cs=tinysrgb&w=600',
-      specialization: ["Women's Health", 'Neurology', 'Orthopedics'],
-      bio: 'Dr. Ahlam is our leading specialist in women\'s health physiotherapy, with particular expertise in postpartum recovery, pelvic floor rehabilitation, and pregnancy-related conditions. Her sensitive and personalized approach has made her a trusted advocate for women\'s wellness.',
-      education: "Master in Women's Health Physiotherapy",
-      certifications: ['Pelvic Floor Rehabilitation Specialist', 'Pre/Postnatal Exercise Specialist'],
+      specialization: ['صحة المرأة', 'الأعصاب', 'العظام'],
+      bio: 'الدكتورة أحلام هي المتخصصة الرائدة في العلاج الطبيعي لصحة المرأة، مع خبرة خاصة في التعافي بعد الولادة وتأهيل قاع الحوض والحالات المتعلقة بالحمل. نهجها الحساس والمخصص جعلها مدافعة موثوقة عن عافية المرأة.',
+      education: 'ماجستير في العلاج الطبيعي لصحة المرأة',
+      certifications: ['أخصائية تأهيل قاع الحوض', 'أخصائية التمارين قبل وبعد الولادة'],
     },
   ];
 
@@ -52,9 +52,9 @@ export default function Team() {
           <div className="absolute bottom-10 right-10 w-96 h-96 bg-white rounded-full blur-3xl" />
         </div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-5xl md:text-6xl font-bold mb-6">Meet Our Team</h1>
+          <h1 className="text-5xl md:text-6xl font-bold mb-6">تعرف على فريقنا</h1>
           <p className="text-xl text-teal-50 max-w-3xl mx-auto">
-            Expert physiotherapists dedicated to your recovery and wellbeing
+            معالجون طبيعيون متخصصون مكرسون لتعافيك ورفاهيتك
           </p>
         </div>
       </section>
@@ -63,7 +63,7 @@ export default function Team() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Our team consists of highly qualified specialists who are passionate about helping you achieve your health goals. Each member brings unique expertise and a commitment to excellence.
+              يتكون فريقنا من متخصصين مؤهلين بدرجة عالية ومتحمسين لمساعدتك في تحقيق أهدافك الصحية. كل عضو يقدم خبرة فريدة والتزاماً بالتميز.
             </p>
           </div>
 
@@ -106,7 +106,7 @@ export default function Team() {
                       <div className="flex items-start space-x-3">
                         <GraduationCap size={24} className="text-teal-600 mt-1 flex-shrink-0" />
                         <div>
-                          <h4 className="font-bold text-gray-900 mb-1">Education</h4>
+                          <h4 className="font-bold text-gray-900 mb-1">التعليم</h4>
                           <p className="text-gray-700">{doctor.education}</p>
                         </div>
                       </div>
@@ -114,7 +114,7 @@ export default function Team() {
                       <div className="flex items-start space-x-3">
                         <Award size={24} className="text-teal-600 mt-1 flex-shrink-0" />
                         <div>
-                          <h4 className="font-bold text-gray-900 mb-1">Certifications</h4>
+                          <h4 className="font-bold text-gray-900 mb-1">الشهادات</h4>
                           <ul className="space-y-1">
                             {doctor.certifications.map((cert, i) => (
                               <li key={i} className="text-gray-700 flex items-start">
@@ -129,7 +129,7 @@ export default function Team() {
                       <div className="flex items-start space-x-3">
                         <Heart size={24} className="text-teal-600 mt-1 flex-shrink-0" />
                         <div>
-                          <h4 className="font-bold text-gray-900 mb-1">Specializations</h4>
+                          <h4 className="font-bold text-gray-900 mb-1">التخصصات</h4>
                           <p className="text-gray-700">{doctor.specialization.join(', ')}</p>
                         </div>
                       </div>
@@ -145,12 +145,12 @@ export default function Team() {
       <section className="py-20 bg-gradient-to-br from-teal-50 to-cyan-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-white rounded-3xl shadow-2xl p-12 text-center">
-            <h2 className="text-4xl font-bold text-gray-900 mb-6">Join Our Growing Family of Satisfied Patients</h2>
+            <h2 className="text-4xl font-bold text-gray-900 mb-6">انضم إلى عائلتنا المتنامية من المرضى الراضين</h2>
             <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
-              Experience personalized care from our expert team. Book your consultation today and start your journey to better health.
+              جرب الرعاية المخصصة من فريقنا المتخصص. احجز استشارتك اليوم وابدأ رحلتك نحو صحة أفضل.
             </p>
             <button className="bg-gradient-to-r from-teal-600 to-cyan-600 text-white px-10 py-4 rounded-full text-lg font-semibold hover:shadow-xl hover:scale-105 transition-all">
-              Book an Appointment
+              احجز موعد
             </button>
           </div>
         </div>

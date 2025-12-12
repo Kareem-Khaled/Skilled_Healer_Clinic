@@ -9,14 +9,11 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           <div>
-            <div className="flex items-center space-x-2 mb-6">
-              <div className="w-10 h-10 bg-gradient-to-br from-teal-500 to-cyan-600 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-xl">P</span>
-              </div>
-              <span className="text-2xl font-bold">PhysioLife</span>
+            <div className="mb-6">
+              <img src="/logo-white.png" alt="شعار" className="h-28 w-auto rounded-lg" />
             </div>
             <p className="text-gray-400 leading-relaxed mb-6">
-              Expert physiotherapy and rehabilitation services for children, women, and adults. Your journey to better health starts here.
+              خدمات علاج طبيعي وتأهيل متخصصة للأطفال والنساء والبالغين. رحلتك إلى صحة أفضل تبدأ من هنا.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-teal-600 transition-colors">
@@ -32,12 +29,12 @@ export default function Footer() {
           </div>
 
           <div>
-            <h3 className="text-lg font-bold mb-6">Quick Links</h3>
+            <h3 className="text-lg font-bold mb-6">روابط سريعة</h3>
             <ul className="space-y-3">
-              {['Home', 'About', 'Services', 'Our Team', 'Techniques', 'Contact'].map((item) => (
+              {['الرئيسية', 'من نحن', 'خدماتنا', 'فريقنا', 'التقنيات', 'اتصل بنا'].map((item, index) => (
                 <li key={item}>
                   <button
-                    onClick={() => navigate(`/${item.toLowerCase().replace(' ', '')}`)}
+                    onClick={() => navigate(['/', '/about', '/services', '/ourteam', '/techniques', '/contact'][index])}
                     className="text-gray-400 hover:text-teal-400 transition-colors"
                   >
                     {item}
@@ -48,23 +45,23 @@ export default function Footer() {
           </div>
 
           <div>
-            <h3 className="text-lg font-bold mb-6">Our Services</h3>
+            <h3 className="text-lg font-bold mb-6">خدماتنا</h3>
             <ul className="space-y-3 text-gray-400">
-              <li>Pediatric Physiotherapy</li>
-              <li>Women's Health</li>
-              <li>Adult Physiotherapy</li>
-              <li>Neurological Rehabilitation</li>
-              <li>Sports Injury Recovery</li>
-              <li>Manual Therapy</li>
+              <li>علاج طبيعي للأطفال</li>
+              <li>صحة المرأة</li>
+              <li>علاج طبيعي للبالغين</li>
+              <li>التأهيل العصبي</li>
+              <li>التعافي من إصابات الرياضة</li>
+              <li>العلاج اليدوي</li>
             </ul>
           </div>
 
           <div>
-            <h3 className="text-lg font-bold mb-6">Contact Info</h3>
+            <h3 className="text-lg font-bold mb-6">معلومات الاتصال</h3>
             <ul className="space-y-4">
               <li className="flex items-start space-x-3">
                 <MapPin size={20} className="text-teal-400 mt-1 flex-shrink-0" />
-                <span className="text-gray-400">123 Healthcare Boulevard, Medical District</span>
+                <span className="text-gray-400">شارع الرعاية الصحية 123، الحي الطبي</span>
               </li>
               <li className="flex items-center space-x-3">
                 <Phone size={20} className="text-teal-400 flex-shrink-0" />
@@ -77,9 +74,9 @@ export default function Footer() {
               <li className="flex items-start space-x-3">
                 <Clock size={20} className="text-teal-400 mt-1 flex-shrink-0" />
                 <div className="text-gray-400">
-                  <p>Mon - Fri: 8:00 AM - 8:00 PM</p>
-                  <p>Sat: 9:00 AM - 5:00 PM</p>
-                  <p>Sun: Closed</p>
+                  <p>الإثنين - الجمعة: 8:00 ص - 8:00 م</p>
+                  <p>السبت: 9:00 ص - 5:00 م</p>
+                  <p>الأحد: مغلق</p>
                 </div>
               </li>
             </ul>
@@ -87,7 +84,7 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-gray-700 mt-12 pt-8 text-center text-gray-400">
-          <p>&copy; {new Date().getFullYear()} PhysioLife Clinic. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} عيادة العلاج الطبيعي. جميع الحقوق محفوظة.</p>
         </div>
       </div>
     </footer>

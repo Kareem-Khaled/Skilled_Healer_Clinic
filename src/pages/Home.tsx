@@ -20,18 +20,18 @@ export default function Home() {
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-fadeInUp">
-            Where Quality Meets Care
+            حيث تلتقي الجودة بالرعاية
           </h1>
           <p className="text-xl md:text-2xl mb-8 text-gray-200 max-w-3xl mx-auto animate-fadeInUp" style={{ animationDelay: '0.2s' }}>
-            Expert physiotherapy for children, women, and adults
+            علاج طبيعي متخصص للأطفال والنساء والبالغين
           </p>
           <button
             onClick={() => navigate('/contact')}
             className="bg-gradient-to-r from-teal-600 to-cyan-600 text-white px-10 py-4 rounded-full text-lg font-semibold hover:shadow-2xl hover:scale-105 transition-all animate-fadeInUp flex items-center space-x-2 mx-auto"
             style={{ animationDelay: '0.4s' }}
           >
-            <span>Book Appointment</span>
             <ArrowRight size={20} />
+            <span>احجز موعد</span>
           </button>
         </div>
 
@@ -45,9 +45,9 @@ export default function Home() {
       <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Our Services</h2>
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">خدماتنا</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Comprehensive physiotherapy solutions tailored to your unique needs
+              حلول علاج طبيعي شاملة مصممة خصيصًا لاحتياجاتك الفريدة
             </p>
           </div>
 
@@ -55,20 +55,20 @@ export default function Home() {
             {[
               {
                 icon: Baby,
-                title: 'Pediatric Physiotherapy',
-                description: 'Specialized care for children with motor delays, cerebral palsy, and developmental concerns',
+                title: 'علاج طبيعي للأطفال',
+                description: 'رعاية متخصصة للأطفال الذين يعانون من تأخر حركي والشلل الدماغي ومشاكل النمو',
                 color: 'from-pink-500 to-rose-500',
               },
               {
                 icon: Heart,
-                title: "Women's Health",
-                description: 'Comprehensive support for postpartum recovery, pelvic floor therapy, and pregnancy-related issues',
+                title: 'صحة المرأة',
+                description: 'دعم شامل للتعافي بعد الولادة وعلاج قاع الحوض والمشاكل المتعلقة بالحمل',
                 color: 'from-purple-500 to-pink-500',
               },
               {
                 icon: Activity,
-                title: 'Adult Physiotherapy',
-                description: 'Expert treatment for sports injuries, back pain, joint problems, and post-surgical rehabilitation',
+                title: 'علاج طبيعي للبالغين',
+                description: 'علاج متخصص للإصابات الرياضية وآلام الظهر ومشاكل المفاصل والتأهيل بعد الجراحة',
                 color: 'from-teal-500 to-cyan-500',
               },
             ].map((service, index) => (
@@ -85,8 +85,8 @@ export default function Home() {
                   onClick={() => navigate('/services')}
                   className="text-teal-600 font-semibold flex items-center space-x-2 group-hover:space-x-3 transition-all"
                 >
-                  <span>Learn More</span>
                   <ArrowRight size={18} />
+                  <span>اعرف المزيد</span>
                 </button>
               </div>
             ))}
@@ -97,16 +97,16 @@ export default function Home() {
       <section className="py-24 bg-gradient-to-br from-teal-50 to-cyan-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Why Choose Us</h2>
-            <p className="text-xl text-gray-600">Excellence in every aspect of care</p>
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">لماذا تختارنا</h2>
+            <p className="text-xl text-gray-600">التميز في كل جانب من جوانب الرعاية</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
-              { icon: Award, title: 'Expert Team', description: 'Highly qualified specialists with years of experience' },
-              { icon: Users, title: 'Patient-Centered', description: 'Personalized treatment plans for optimal results' },
-              { icon: Shield, title: 'Trusted Care', description: 'Safe, evidence-based therapeutic approaches' },
-              { icon: Zap, title: 'Modern Techniques', description: 'Latest equipment and rehabilitation methods' },
+              { icon: Award, title: 'فريق خبير', description: 'متخصصون مؤهلون تأهيلاً عالياً بخبرة سنوات طويلة' },
+              { icon: Users, title: 'رعاية تتمحور حول المريض', description: 'خطط علاجية مخصصة لنتائج مثلى' },
+              { icon: Shield, title: 'رعاية موثوقة', description: 'نهج علاجي آمن وقائم على الأدلة' },
+              { icon: Zap, title: 'تقنيات حديثة', description: 'أحدث المعدات وأساليب التأهيل' },
             ].map((feature, index) => (
               <div key={index} className="text-center">
                 <div className="w-20 h-20 bg-gradient-to-br from-teal-600 to-cyan-600 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
@@ -123,28 +123,28 @@ export default function Home() {
       <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">What Our Patients Say</h2>
-            <p className="text-xl text-gray-600">Real stories from real people</p>
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">ماذا يقول مرضانا</h2>
+            <p className="text-xl text-gray-600">قصص حقيقية من أشخاص حقيقيين</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
               {
-                name: 'Sarah Johnson',
-                role: 'Postpartum Recovery',
-                content: 'The care I received was exceptional. Dr. Ahlam helped me recover completely after childbirth. I feel stronger than ever!',
+                name: 'سارة جونسون',
+                role: 'التعافي بعد الولادة',
+                content: 'الرعاية التي تلقيتها كانت استثنائية. ساعدتني الدكتورة أحلام على التعافي بشكل كامل بعد الولادة. أشعر بأنني أقوى من أي وقت مضى!',
                 rating: 5,
               },
               {
-                name: 'Michael Chen',
-                role: 'Sports Injury',
-                content: 'After my ACL injury, I thought my athletic days were over. Thanks to the team here, I am back to playing soccer at full strength.',
+                name: 'ميشيل شين',
+                role: 'إصابة رياضية',
+                content: 'بعد إصابتي في الرباط الصليبي، ظننت أن أيامي الرياضية انتهت. بفضل الفريق هنا، عدت للعب كرة القدم بكامل قوتي.',
                 rating: 5,
               },
               {
-                name: 'Emma Williams',
-                role: 'Pediatric Care',
-                content: 'Dr. Abd-Elrahman worked wonders with my son. His motor skills have improved dramatically. We are so grateful!',
+                name: 'إيما ويليامز',
+                role: 'رعاية الأطفال',
+                content: 'عمل الدكتور عبد الرحمن العجائب مع ابني. تحسنت مهاراته الحركية بشكل ملحوظ. نحن ممتنون جدًا!',
                 rating: 5,
               },
             ].map((testimonial, index) => (
@@ -175,15 +175,15 @@ export default function Home() {
 
       <section className="py-24 bg-gradient-to-r from-teal-600 to-cyan-600 text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">Ready to Start Your Recovery Journey?</h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-6">هل أنت مستعد لبدء رحلة التعافي؟</h2>
           <p className="text-xl mb-8 text-teal-50">
-            Book your appointment today and take the first step towards better health
+            احجز موعدك اليوم واتخذ الخطوة الأولى نحو صحة أفضل
           </p>
           <button
             onClick={() => navigate('/contact')}
             className="bg-white text-teal-600 px-10 py-4 rounded-full text-lg font-semibold hover:shadow-2xl hover:scale-105 transition-all"
           >
-            Schedule Consultation
+            احجز استشارة
           </button>
         </div>
       </section>
