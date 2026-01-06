@@ -166,8 +166,8 @@ export default function Contact() {
                     </div>
                     <div>
                       <h3 className="font-bold text-gray-900 mb-1">الهاتف</h3>
-                      <p className="text-gray-600">+1 (555) 123-4567</p>
-                      <p className="text-sm text-teal-600 mt-2">الإثنين-الجمعة: 8 صباحاً - 8 مساءً</p>
+                      <p className="text-gray-600" dir="ltr">+966 50 790 0310</p>
+                      <p className="text-sm text-teal-600 mt-2">السبت - الخميس: 2-10 م</p>
                     </div>
                   </div>
 
@@ -177,7 +177,7 @@ export default function Contact() {
                     </div>
                     <div>
                       <h3 className="font-bold text-gray-900 mb-1">البريد الإلكتروني</h3>
-                      <p className="text-gray-600">info@physiolife.com</p>
+                      <p className="text-gray-600">masterphysio.sa@gmail.com</p>
                       <p className="text-sm text-purple-600 mt-2">سنرد خلال 24 ساعة</p>
                     </div>
                   </div>
@@ -188,8 +188,8 @@ export default function Contact() {
                     </div>
                     <div>
                       <h3 className="font-bold text-gray-900 mb-1">العنوان</h3>
-                      <p className="text-gray-600">123 Healthcare Boulevard</p>
-                      <p className="text-gray-600">Medical District, City 12345</p>
+                      <p className="text-gray-600">8013 سلمه بنت هشام بن المغيرة</p>
+                      <p className="text-gray-600">حي شظاة، المدينة المنورة</p>
                     </div>
                   </div>
 
@@ -200,9 +200,8 @@ export default function Contact() {
                     <div>
                       <h3 className="font-bold text-gray-900 mb-1">ساعات العمل</h3>
                       <div className="text-gray-600 space-y-1">
-                        <p>الإثنين - الجمعة: 8:00 صباحاً - 8:00 مساءً</p>
-                        <p>السبت: 9:00 صباحاً - 5:00 مساءً</p>
-                        <p>الأحد: مغلق</p>
+                        <p>السبت - الخميس: 2:00 م - 10:00 م</p>
+                        <p>الجمعة: مغلق</p>
                       </div>
                     </div>
                   </div>
@@ -216,7 +215,7 @@ export default function Contact() {
                   احصل على إجابات فورية لأسئلتك عبر واتساب
                 </p>
                 <a
-                  href="https://wa.me/15551234567"
+                  href="https://wa.me/966507900310"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-white text-teal-600 px-6 py-3 rounded-full font-semibold hover:shadow-xl hover:scale-105 transition-all inline-block"
@@ -233,22 +232,26 @@ export default function Contact() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">اعثر علينا</h2>
-            <p className="text-xl text-gray-600">موقع مريح في المنطقة الطبية</p>
-          </div>
+            <p className="text-xl text-gray-600">موقع مريح في المنطقة الطبية</p>            <a
+              href="https://www.google.com/maps/place/%D8%B9%D9%8A%D8%A7%D8%AF%D8%A9+%D8%A7%D9%84%D9%85%D8%B9%D8%A7%D9%84%D8%AC+%D8%A7%D9%84%D8%A8%D8%A7%D8%B1%D8%B9+%D9%84%D9%84%D8%B9%D9%84%D8%A7%D8%AC+%D8%A7%D9%84%D8%B7%D8%A8%D9%8A%D8%B9%D9%8A+Master+Physio+Clinic+for+Physical+Therapy%E2%80%AD/@24.4972378,39.657619,17z/data=!3m1!4b1!4m6!3m5!1s0x15bd9700442bf4cd:0x1b4576600992a024!8m2!3d24.4972378!4d39.657619!16s%2Fg%2F11yb399_6j"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block mt-4 text-teal-600 hover:text-teal-700 font-semibold"
+            >
+              افتح في خرائط Google ←
+            </a>          </div>
 
           <div className="bg-white rounded-3xl shadow-2xl overflow-hidden h-96">
-            <div
-              className="w-full h-full bg-gradient-to-br from-teal-100 to-cyan-100 flex items-center justify-center"
-            >
-              <div className="text-center">
-                <MapPin size={64} className="text-teal-600 mx-auto mb-4" />
-                <p className="text-gray-600 text-lg">
-                  مساحة لتكامل الخريطة
-                  <br />
-                  <span className="text-sm">123 Healthcare Boulevard, Medical District</span>
-                </p>
-              </div>
-            </div>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3573.982789!2d39.6554443!3d24.4972378!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15bd9700442bf4cd%3A0x1b4576600992a024!2z2LnZitin2K_YqSDYp9mE2YXYudin2YTYrCDYp9mE2KjYp9ix2Lkg2YTZhNi52YTYp9isINin2YTYt9io2YrYudmK!5e0!3m2!1sar!2ssa!4v1704567890123!5m2!1sar!2ssa"
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="موقع عيادة المعالج البارع"
+            />
           </div>
         </div>
       </section>

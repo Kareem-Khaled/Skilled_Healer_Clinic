@@ -49,7 +49,7 @@ export default function Footer() {
               <li>صحة المرأة</li>
               <li>علاج طبيعي للبالغين</li>
               <li>التأهيل العصبي</li>
-              <li>التعافي من إصابات الرياضة</li>
+              <li>الإصابات الرياضية</li>
               <li>العلاج اليدوي</li>
             </ul>
           </div>
@@ -59,22 +59,21 @@ export default function Footer() {
             <ul className="space-y-4">
               <li className="flex items-start space-x-3">
                 <MapPin size={20} className="text-teal-400 mt-1 flex-shrink-0" />
-                <span className="text-gray-400">شارع الرعاية الصحية 123، الحي الطبي</span>
+                <span className="text-gray-400">8013 سلمه بنت هشام بن المغيرة، حي شظاة، المدينة المنورة</span>
               </li>
               <li className="flex items-center space-x-3">
                 <Phone size={20} className="text-teal-400 flex-shrink-0" />
-                <span className="text-gray-400">+1 (555) 123-4567</span>
+                <span className="text-gray-400" dir="ltr">+966 50 790 0310</span>
               </li>
               <li className="flex items-center space-x-3">
                 <Mail size={20} className="text-teal-400 flex-shrink-0" />
-                <span className="text-gray-400">info@physiolife.com</span>
+                <span className="text-gray-400">masterphysio.sa@gmail.com</span>
               </li>
               <li className="flex items-start space-x-3">
                 <Clock size={20} className="text-teal-400 mt-1 flex-shrink-0" />
                 <div className="text-gray-400">
-                  <p>الإثنين - الجمعة: 8:00 ص - 8:00 م</p>
-                  <p>السبت: 9:00 ص - 5:00 م</p>
-                  <p>الأحد: مغلق</p>
+                  <p>السبت - الخميس: 2:00 م - 10:00 م</p>
+                  <p>الجمعة: مغلق</p>
                 </div>
               </li>
             </ul>

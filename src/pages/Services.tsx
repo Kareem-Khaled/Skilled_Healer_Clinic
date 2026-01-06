@@ -1,25 +1,26 @@
-import { Baby, Heart, Activity, Brain, ArrowRight } from 'lucide-react';
+import { Baby, Heart, Activity, Brain, ArrowRight, Zap, Users2 } from 'lucide-react';
 import { useRouter } from '../context/RouterContext';
 
 export default function Services() {
   const { navigate } = useRouter();
 
-  const services = [
+  const mainServices = [
     {
       icon: Baby,
       title: 'العلاج الطبيعي للأطفال',
       color: 'from-pink-500 to-rose-500',
       image: 'https://images.pexels.com/photos/8613089/pexels-photo-8613089.jpeg?auto=compress&cs=tinysrgb&w=800',
-      description: 'رعاية متخصصة للأطفال من الرضاعة حتى المراهقة، لمعالجة اضطرابات النمو والحركة.',
+      description: 'نساعد الأطفال على تحسين الحركة، القوة، والتناسق من خلال برامج علاجية متخصصة.',
       conditions: [
-        'تأخر النمو الحركي',
-        'إدارة الشلل الدماغي',
-        'علاج وتصحيح القدم الحنفاء',
-        'اضطرابات المشي ومشاكل المشي',
-        'علاج الصعر (شد عضلات الرقبة)',
-        'تصحيح المشي على أطراف الأصابع',
-        'اضطرابات التنسيق والتوازن',
-        'مشاكل القوام',
+        'تأخر المهارات الحركية',
+        'التواء الرقبة (Torticollis)',
+        'القدم الحنفاء (Clubfoot)',
+        'القدم المسطحة',
+        'المشي على أطراف الأصابع',
+        'الشلل الدماغي',
+        'اضطرابات التناسق الحركي',
+        'اختلالات المشي',
+        'إعادة التأهيل بعد الإصابات',
       ],
     },
     {
@@ -27,16 +28,14 @@ export default function Services() {
       title: 'العلاج الطبيعي لصحة المرأة',
       color: 'from-purple-500 to-pink-500',
       image: 'https://images.pexels.com/photos/3997986/pexels-photo-3997986.jpeg?auto=compress&cs=tinysrgb&w=800',
-      description: 'دعم شامل للمرأة في جميع مراحل الحياة، من الحمل إلى ما بعد الولادة وما بعدها.',
+      description: 'رعاية متخصصة للسيدات في كل مراحل الحياة من الحمل إلى ما بعد الولادة.',
       conditions: [
-        'التأهيل بعد الولادة',
-        'علاج وتقوية قاع الحوض',
-        'إصلاح انفراق عضلات البطن',
-        'إدارة الآلام المتعلقة بالحمل',
-        'تصحيح القوام أثناء وبعد الحمل',
-        'علاج سلس البول',
-        'التعافي قبل وبعد الولادة القيصرية',
-        'برامج العودة للياقة البدنية',
+        'آلام الحمل',
+        'إعادة التأهيل بعد الولادة',
+        'علاج انفصال عضلات البطن',
+        'تقوية عضلات قاع الحوض',
+        'آلام الظهر والرقبة',
+        'برامج تصحيح القوام للسيدات',
       ],
     },
     {
@@ -44,35 +43,80 @@ export default function Services() {
       title: 'العلاج الطبيعي للبالغين',
       color: 'from-teal-500 to-cyan-500',
       image: 'https://images.pexels.com/photos/7659567/pexels-photo-7659567.jpeg?auto=compress&cs=tinysrgb&w=800',
-      description: 'علاج متخصص للإصابات الحادة والآلام المزمنة والتأهيل بعد الجراحة للبالغين من جميع الأعمار.',
+      description: 'علاج متخصص للإصابات الحادة والآلام المزمنة والتأهيل بعد الجراحة للبالغين وكبار السن.',
       conditions: [
-        'تخفيف آلام الظهر والرقبة',
-        'تأهيل الرباط الصليبي والإصابات الرياضية',
-        'علاج الانزلاق الغضروفي',
-        'إدارة آلام المفاصل والتهاب المفاصل',
-        'التعافي بعد الكسور',
-        'إصابات الكتف والكفة المدورة',
-        'التأهيل بعد استبدال الركبة والورك',
-        'إدارة الآلام المزمنة',
+        'آلام الظهر والرقبة',
+        'التهابات الكتف والانحشار',
+        'تأهيل الرباط الصليبي (ACL)',
+        'إصابات الغضروف الهلالي',
+        'التقلصات والآلام المزمنة',
+        'إعادة التأهيل بعد الكسور',
+        'إصابات الغضاريف',
+        'تأهيل إصابات الرياضة',
       ],
     },
-    {
-      icon: Brain,
-      title: 'التأهيل العصبي',
-      color: 'from-blue-500 to-indigo-500',
-      image: 'https://images.pexels.com/photos/7659580/pexels-photo-7659580.jpeg?auto=compress&cs=tinysrgb&w=800',
-      description: 'برامج متخصصة للمرضى الذين يتعافون من حالات وإصابات عصبية.',
-      conditions: [
-        'التعافي والتأهيل من السكتة الدماغية',
-        'إدارة التصلب العصبي المتعدد',
-        'التأهيل من إصابات الحبل الشوكي',
-        'علاج إصابات الأعصاب الطرفية',
-        'تدريب التوازن والتنسيق',
-        'استعادة الحركة الوظيفية',
-        'إدارة مرض باركنسون',
-        'التعافي من إصابات الدماغ الرضية',
-      ],
-    },
+  ];
+
+  const neurologicalConditions = [
+    { title: 'حالات الشلل', items: [
+      'شلل رباعي تشنجي - Spastic quadriplegia',
+      'ضعف رباعي - Quadriparesis',
+      'شلل تشنجي مزدوج - Spastic diplegia',
+      'شلل نصفي سفلي تشنجي - Spastic paraplegia',
+      'شلل نصفي أيمن تشنجي - Spastic Rt hemiplegia',
+      'شلل ثلاثي تشنجي - Spastic Triplegia',
+      'شلل نصفي أيمن/أيسر - Rt/Lt hemiplegia',
+      'شلل نصفي سفلي - Paraplegia',
+    ]},
+    { title: 'اضطرابات عصبية', items: [
+      'السكتة الدماغية - Stroke/Hemiplegia',
+      'إصابات الحبل الشوكي',
+      'التصلب المتعدد - Multiple Sclerosis',
+      'التصلب الحدبي - Tuberous sclerosis',
+      'الورم العصبي الليفي - Neurofibromatosis',
+      'اعتلال الأعصاب الطرفية والوراثي',
+      'مرض شاركو-ماري-توث - Charcot-Marie-Tooth',
+    ]},
+    { title: 'حالات الصرع والدماغ', items: [
+      'الصرع - Epilepsy',
+      'متلازمة درافيت، فرط الحركة - Dravet syndrome, ADHD',
+      'اعتلال الدماغ بنقص الأكسجة - Hypoxic ischemic encephalopathy',
+      'نقص التروية الدماغية الشديد - Severe cerebral ischemia',
+      'إصابة الدماغ الرضية - TBI',
+      'استسقاء دماغي - Hydrocephalus',
+    ]},
+    { title: 'اضطرابات الحركة', items: [
+      'الرنح - Ataxia',
+      'الحركات اللاإرادية - Choreo-athetosis',
+      'خلل التوتر العضلي - Dystonia',
+    ]},
+  ];
+
+  const developmentalConditions = [
+    'التوحد - Autism',
+    'تأخر النمو وتأخر الكلام - Developmental delay and speech delay',
+    'تأخر في اكتساب المهارات - Delayed milestone',
+    'تأخر النمو الشامل - GDD (Global Developmental Delay)',
+    'تأخر النمو الحركي النفسي - Global psycho-motor delay',
+  ];
+
+  const geneticSyndromes = [
+    'متلازمة جوبيرت - Joubert syndrome',
+    'متلازمة لارسن - Larsen syndrome',
+    'ضمور العضلات الشوكي - SMA',
+    'متلازمة إهلرز-دانلوس - Ehlers-Danlos syndrome',
+    'متلازمة كورنيا دي لانج - Cornea de Lange syndrome',
+    'متلازمة داندي-ووكر - Dandy-Walker syndrome',
+    'نقص عامل التخثر الوراثي الثامن',
+  ];
+
+  const congenitalConditions = [
+    'السنسنة المشقوقة - Spina bifida',
+    'القيلة النخاعية السحائية - MMC (Myelomeningocele)',
+    'استسقاء دماغي خلقي مع شلل رباعي',
+    'الحثل العضلي الخلقي',
+    'خلل التنسج العظمي الغضروفي',
+    'الجنف - Scoliosis',
   ];
 
   return (
@@ -93,7 +137,7 @@ export default function Services() {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="space-y-24">
-            {services.map((service, index) => (
+            {mainServices.map((service, index) => (
               <div
                 key={index}
                 className={`grid grid-cols-1 lg:grid-cols-2 gap-12 items-center ${
@@ -138,6 +182,100 @@ export default function Services() {
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="py-20 bg-gradient-to-br from-gray-50 to-gray-100">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">التأهيل العصبي المتخصص</h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              نقدم علاجاً شاملاً لمجموعة واسعة من الحالات العصبية لجميع الأعمار
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+            {neurologicalConditions.map((category, index) => (
+              <div key={index} className="bg-white rounded-2xl p-8 shadow-lg">
+                <h3 className="text-2xl font-bold text-gray-900 mb-6 flex items-center space-x-3">
+                  <Brain size={28} className="text-blue-600" />
+                  <span>{category.title}</span>
+                </h3>
+                <ul className="space-y-3">
+                  {category.items.map((item, i) => (
+                    <li key={i} className="flex items-start space-x-2">
+                      <span className="text-blue-600 mt-1">•</span>
+                      <span className="text-gray-700">{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="bg-white rounded-2xl p-8 shadow-lg">
+              <h3 className="text-2xl font-bold text-gray-900 mb-6 flex items-center space-x-3">
+                <Zap size={28} className="text-purple-600" />
+                <span>اضطرابات النمو</span>
+              </h3>
+              <ul className="space-y-3">
+                {developmentalConditions.map((item, i) => (
+                  <li key={i} className="flex items-start space-x-2">
+                    <span className="text-purple-600 mt-1">•</span>
+                    <span className="text-gray-700 text-sm">{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            <div className="bg-white rounded-2xl p-8 shadow-lg">
+              <h3 className="text-2xl font-bold text-gray-900 mb-6 flex items-center space-x-3">
+                <Users2 size={28} className="text-pink-600" />
+                <span>أمراض وراثية ومتلازمات</span>
+              </h3>
+              <ul className="space-y-3">
+                {geneticSyndromes.map((item, i) => (
+                  <li key={i} className="flex items-start space-x-2">
+                    <span className="text-pink-600 mt-1">•</span>
+                    <span className="text-gray-700 text-sm">{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            <div className="bg-white rounded-2xl p-8 shadow-lg">
+              <h3 className="text-2xl font-bold text-gray-900 mb-6 flex items-center space-x-3">
+                <Activity size={28} className="text-teal-600" />
+                <span>تشوهات خلقية</span>
+              </h3>
+              <ul className="space-y-3">
+                {congenitalConditions.map((item, i) => (
+                  <li key={i} className="flex items-start space-x-2">
+                    <span className="text-teal-600 mt-1">•</span>
+                    <span className="text-gray-700 text-sm">{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="bg-gradient-to-br from-teal-600 to-cyan-600 rounded-3xl shadow-2xl p-12 text-center text-white">
+            <h2 className="text-4xl font-bold mb-6">نقدم خدمة العلاج الطبيعي المكثف</h2>
+            <p className="text-xl mb-8 max-w-3xl mx-auto text-teal-50">
+              برامج علاجية مكثفة مصممة خصيصاً لحالات الأطفال والأعصاب لتحقيق أفضل النتائج
+            </p>
+            <button
+              onClick={() => navigate('/contact')}
+              className="bg-white text-teal-600 px-10 py-4 rounded-full text-lg font-semibold hover:shadow-xl hover:scale-105 transition-all"
+            >
+              حدد موعد استشارة
+            </button>
           </div>
         </div>
       </section>

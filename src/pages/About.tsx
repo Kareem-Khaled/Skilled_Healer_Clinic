@@ -20,25 +20,28 @@ export default function About() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
-              <h2 className="text-4xl font-bold text-gray-900 mb-6">قصتنا</h2>
+              <h2 className="text-4xl font-bold text-gray-900 mb-6">من نحن</h2>
               <p className="text-gray-600 leading-relaxed mb-6">
-                تأسست عيادتنا برؤية تقديم خدمات علاج طبيعي عالمية المستوى، ونمت لتصبح اسماً موثوقاً في التأهيل والعافية. بدأت رحلتنا بإيمان بسيط: أن كل شخص يستحق الوصول إلى رعاية متخصصة تلبي احتياجاته الفريدة.
+                في عيادتنا، تتمثل رسالتنا في دعم صحة وحركة الأسرة في كل مراحل الحياة.
               </p>
               <p className="text-gray-600 leading-relaxed mb-6">
-                اليوم، نخدم مئات المرضى من جميع الفئات العمرية، من الرضع الذين يعانون من تأخر في النمو إلى الرياضيين النخبة الذين يتعافون من الإصابات، وكبار السن الذين يحافظون على استقلاليتهم. يجمع فريقنا متعدد التخصصات بين التميز السريري والرحمة الحقيقية.
+                نقدّم رعاية متخصصة لحديثي الولادة والأطفال الذين يعانون من تأخر التطور الحركي، تعديل المشي، الحالات العصبية، والتشوهات الخلقية مثل القدم الحنفاء وتمارين النمو الحركي.
+              </p>
+              <p className="text-gray-600 leading-relaxed mb-6">
+                للنساء، نوفر رعاية الحمل، إعادة التأهيل بعد الولادة، علاج انفصال عضلات البطن، وعلاج ضعف قاع الحوض.
               </p>
               <p className="text-gray-600 leading-relaxed">
-                نستثمر باستمرار في التدريب المتقدم والمعدات الحديثة والتقنيات القائمة على الأدلة لضمان حصول مرضانا على أعلى معايير الرعاية الممكنة.
+                للبالغين وكبار السن، نتخصص في الحالات العضلية والعصبية، الآلام المزمنة وإعادة تأهيل الإصابات. فريقنا مؤهل وعلى أعلى مستوى، ويقدم علاجًا آمنًا قائمًا على الأدلة العلمية مع متابعة دقيقة للتقدّم العلاجي.
               </p>
             </div>
             <div className="grid grid-cols-2 gap-4">
               <div
                 className="h-64 rounded-2xl bg-cover bg-center shadow-lg"
-                style={{ backgroundImage: 'url(https://images.pexels.com/photos/4506105/pexels-photo-4506105.jpeg?auto=compress&cs=tinysrgb&w=600)' }}
+                style={{ backgroundImage: `url(${import.meta.env.BASE_URL}Clinic/83eda45ff120b981026552dcb61ea8b3.jpg)` }}
               />
               <div
                 className="h-64 rounded-2xl bg-cover bg-center shadow-lg mt-8"
-                style={{ backgroundImage: 'url(https://images.pexels.com/photos/7659564/pexels-photo-7659564.jpeg?auto=compress&cs=tinysrgb&w=600)' }}
+                style={{ backgroundImage: `url(${import.meta.env.BASE_URL}Clinic/ac9acaba6c811aced0896e70ea96bf9d.jpg)` }}
               />
             </div>
           </div>
@@ -54,7 +57,7 @@ export default function About() {
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-4">رسالتنا</h3>
               <p className="text-gray-600 leading-relaxed">
-                تمكين الأفراد من جميع الأعمار لتحقيق الأداء البدني الأمثل ونوعية حياة أفضل من خلال رعاية علاج طبيعي مخصصة وقائمة على الأدلة مقدمة بالتعاطف والتميز.
+                دعم صحة وحركة الأسرة في كل مراحل الحياة من خلال تقديم رعاية علاج طبيعي متخصصة وقائمة على الأدلة العلمية.
               </p>
             </div>
 
@@ -64,7 +67,7 @@ export default function About() {
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-4">رؤيتنا</h3>
               <p className="text-gray-600 leading-relaxed">
-                أن نكون عيادة العلاج الطبيعي الرائدة المعترف بها في تحويل الحياة، وتطوير المجال من خلال الابتكار، ووضع معايير جديدة في رعاية المرضى ونتائج التأهيل.
+                أن نكون العيادة الرائدة في تقديم خدمات علاج طبيعي عالية الجودة باستخدام أحدث التقنيات وخطط علاجية مخصصة لكل حالة.
               </p>
             </div>
 
@@ -74,7 +77,7 @@ export default function About() {
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-4">قيمنا</h3>
               <p className="text-gray-600 leading-relaxed">
-                النزاهة والتعاطف والتميز والتحسين المستمر توجه كل ما نقوم به. نعامل كل مريض كشريك مُقدّر في رحلة شفائه.
+                الجودة، الاحترافية، والتميز في كل ما نقوم به. نعامل كل مريض برعاية فائقة واهتمام شخصي.
               </p>
             </div>
           </div>
@@ -91,28 +94,28 @@ export default function About() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {[
               {
-                title: 'خبرة متخصصة',
-                description: 'يضم فريقنا متخصصين في طب الأطفال وصحة المرأة والأعصاب والعظام والطب الرياضي، مما يضمن رعاية متخصصة لكل حالة.',
+                title: 'أخصائيون مرخّصون وذوو خبرة',
+                description: 'فريقنا من المتخصصين المؤهلين تأهيلاً عالياً في طب الأطفال، صحة المرأة، والعلاج العصبي والعضلي الهيكلي.',
               },
               {
-                title: 'نهج شامل',
-                description: 'نعالج ليس فقط الأعراض بل الأسباب الجذرية، مع مراعاة العوامل البدنية والعاطفية ونمط الحياة في خطة العلاج الخاصة بك.',
+                title: 'تجهيزات حديثة وغرف علاج خاصة',
+                description: 'معدات متطورة وأحدث التقنيات في علاج طبيعي مريح وخاص.',
               },
               {
-                title: 'تقنية متقدمة',
-                description: 'معدات حديثة تشمل العلاج الكهربائي والموجات فوق الصوتية وأدوات التأهيل الحديثة لنتائج مثالية.',
+                title: 'اختصاصيون في علاج وتأهيل الأطفال',
+                description: 'خبرة واسعة في تأهيل الأطفال باستخدام أحدث الأساليب العلاجية مثل NDT وDMI وCME.',
               },
               {
-                title: 'رعاية تتمحور حول الأسرة',
-                description: 'نشرك العائلات في عملية العلاج، ونقدم التعليم والدعم للنجاح على المدى الطويل.',
+                title: 'رعاية ما قبل وبعد الولادة',
+                description: 'برامج متخصصة للنساء في جميع مراحل الحمل والولادة والتعافي.',
               },
               {
-                title: 'جدولة مرنة',
-                description: 'ساعات عمل ممتدة ومواعيد في نفس اليوم متاحة لتناسب أسلوب حياتك المزدحم.',
+                title: 'خطط علاجية فردية',
+                description: 'كل خطة علاجية مصممة خصيصاً بناءً على حالة المريض وأهدافه الشخصية.',
               },
               {
-                title: 'نتائج مثبتة',
-                description: 'آلاف النتائج الناجحة للمرضى مدعومة ببروتوكولات قائمة على الأدلة وتتبع مستمر للنتائج.',
+                title: 'معالجات إناث متاحات',
+                description: 'نوفر معالجات إناث متخصصات لضمان راحة جميع المرضى.',
               },
             ].map((item, index) => (
               <div key={index} className="flex space-x-4 p-6 bg-gradient-to-br from-gray-50 to-white rounded-xl shadow-md hover:shadow-lg transition-shadow">
@@ -161,15 +164,15 @@ export default function About() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div
               className="h-80 rounded-2xl bg-cover bg-center shadow-lg hover:shadow-xl transition-shadow"
-              style={{ backgroundImage: 'url(https://images.pexels.com/photos/7659579/pexels-photo-7659579.jpeg?auto=compress&cs=tinysrgb&w=800)' }}
+              style={{ backgroundImage: `url(${import.meta.env.BASE_URL}Clinic/e4707b1b1edfb8bda538f7dda1f4ac25.jpg)` }}
             />
             <div
               className="h-80 rounded-2xl bg-cover bg-center shadow-lg hover:shadow-xl transition-shadow"
-              style={{ backgroundImage: 'url(https://images.pexels.com/photos/4506270/pexels-photo-4506270.jpeg?auto=compress&cs=tinysrgb&w=800)' }}
+              style={{ backgroundImage: `url(${import.meta.env.BASE_URL}Clinic/012650ccaa08a1c7974cf6f7159a31f6.jpg)` }}
             />
             <div
               className="h-80 rounded-2xl bg-cover bg-center shadow-lg hover:shadow-xl transition-shadow"
-              style={{ backgroundImage: 'url(https://images.pexels.com/photos/7659587/pexels-photo-7659587.jpeg?auto=compress&cs=tinysrgb&w=800)' }}
+              style={{ backgroundImage: `url(${import.meta.env.BASE_URL}Clinic/273da6d5120e98bcec27f06a9b71e25c.jpg)` }}
             />
           </div>
         </div>

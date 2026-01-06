@@ -20,10 +20,10 @@ export default function Home() {
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-fadeInUp">
-            حيث تلتقي الجودة بالرعاية
+            حيث تلتقي الجودة بالرعايه
           </h1>
           <p className="text-xl md:text-2xl mb-8 text-gray-200 max-w-3xl mx-auto animate-fadeInUp" style={{ animationDelay: '0.2s' }}>
-            علاج طبيعي متخصص للأطفال والنساء والبالغين
+            نوفّر خدمات علاج طبيعي عالية الجودة للأطفال والسيدات والرجال، باستخدام أحدث التقنيات وخطط علاجية مخصّصة لكل حالة
           </p>
           <button
             onClick={() => navigate('/contact')}
@@ -47,7 +47,7 @@ export default function Home() {
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">خدماتنا</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              حلول علاج طبيعي شاملة مصممة خصيصًا لاحتياجاتك الفريدة
+              نحن متخصصون في تأهيل الأطفال، وعلاج صحة المرأة، وإعادة التأهيل العضلي الهيكلي لكل الأعمار
             </p>
           </div>
 
@@ -56,19 +56,19 @@ export default function Home() {
               {
                 icon: Baby,
                 title: 'علاج طبيعي للأطفال',
-                description: 'رعاية متخصصة للأطفال الذين يعانون من تأخر حركي والشلل الدماغي ومشاكل النمو',
+                description: 'تأهيل متخصص للأطفال: تأخر التطور الحركي، تعديل المشي، الحالات العصبية، التشوهات الخلقية مثل القدم الحنفاء وتمارين النمو الحركي',
                 color: 'from-pink-500 to-rose-500',
               },
               {
                 icon: Heart,
                 title: 'صحة المرأة',
-                description: 'دعم شامل للتعافي بعد الولادة وعلاج قاع الحوض والمشاكل المتعلقة بالحمل',
+                description: 'رعاية الحمل، إعادة التأهيل بعد الولادة، علاج انفصال عضلات البطن، علاج ضعف قاع الحوض',
                 color: 'from-purple-500 to-pink-500',
               },
               {
                 icon: Activity,
                 title: 'علاج طبيعي للبالغين',
-                description: 'علاج متخصص للإصابات الرياضية وآلام الظهر ومشاكل المفاصل والتأهيل بعد الجراحة',
+                description: 'الحالات العضلية والعصبية، آلام مزمنة وإعادة تأهيل الإصابات للبالغين وكبار السن',
                 color: 'from-teal-500 to-cyan-500',
               },
             ].map((service, index) => (
@@ -103,10 +103,10 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
-              { icon: Award, title: 'فريق خبير', description: 'متخصصون مؤهلون تأهيلاً عالياً بخبرة سنوات طويلة' },
-              { icon: Users, title: 'رعاية تتمحور حول المريض', description: 'خطط علاجية مخصصة لنتائج مثلى' },
-              { icon: Shield, title: 'رعاية موثوقة', description: 'نهج علاجي آمن وقائم على الأدلة' },
-              { icon: Zap, title: 'تقنيات حديثة', description: 'أحدث المعدات وأساليب التأهيل' },
+              { icon: Award, title: 'أخصائيون مرخّصون وذوو خبرة', description: 'فريقنا مؤهل وعلى أعلى مستوى' },
+              { icon: Users, title: 'خطط علاجية فردية', description: 'علاجًا آمنًا قائمًا على الأدلة العلمية' },
+              { icon: Shield, title: 'بيئة مناسبة للعائلات', description: 'غرف علاج خاصة ومعالجات إناث متاحات' },
+              { icon: Zap, title: 'تجهيزات حديثة', description: 'أحدث التقنيات ومتابعة دقيقة للتقدّم العلاجي' },
             ].map((feature, index) => (
               <div key={index} className="text-center">
                 <div className="w-20 h-20 bg-gradient-to-br from-teal-600 to-cyan-600 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
