@@ -9,7 +9,7 @@ export default function Services() {
       icon: Baby,
       title: 'العلاج الطبيعي للأطفال',
       color: 'from-pink-500 to-rose-500',
-      image: 'https://images.pexels.com/photos/8613089/pexels-photo-8613089.jpeg?auto=compress&cs=tinysrgb&w=800',
+      image: `${import.meta.env.BASE_URL}Pictures/children-therapy.jpeg`,
       description: 'نساعد الأطفال على تحسين الحركة، القوة، والتناسق من خلال برامج علاجية متخصصة.',
       conditions: [
         'تأخر المهارات الحركية',
@@ -27,7 +27,7 @@ export default function Services() {
       icon: Heart,
       title: 'العلاج الطبيعي لصحة المرأة',
       color: 'from-purple-500 to-pink-500',
-      image: 'https://images.pexels.com/photos/3997986/pexels-photo-3997986.jpeg?auto=compress&cs=tinysrgb&w=800',
+      image: `${import.meta.env.BASE_URL}Pictures/womens-health-therapy.jpeg`,
       description: 'رعاية متخصصة للسيدات في كل مراحل الحياة من الحمل إلى ما بعد الولادة.',
       conditions: [
         'آلام الحمل',
@@ -42,7 +42,7 @@ export default function Services() {
       icon: Activity,
       title: 'العلاج الطبيعي للبالغين',
       color: 'from-teal-500 to-cyan-500',
-      image: 'https://images.pexels.com/photos/7659567/pexels-photo-7659567.jpeg?auto=compress&cs=tinysrgb&w=800',
+      image: `${import.meta.env.BASE_URL}Pictures/adult-therapy.jpg`,
       description: 'علاج متخصص للإصابات الحادة والآلام المزمنة والتأهيل بعد الجراحة للبالغين وكبار السن.',
       conditions: [
         'آلام الظهر والرقبة',

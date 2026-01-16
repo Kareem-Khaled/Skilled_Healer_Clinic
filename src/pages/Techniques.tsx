@@ -18,7 +18,7 @@ export default function Techniques() {
     {
       icon: Hand,
       title: 'العلاج اليدوي',
-      image: `${import.meta.env.BASE_URL}manual-therapy.jpg`,
+      image: `${import.meta.env.BASE_URL}Pictures/manual-therapy.jpg`,
       description: 'تقنيات يدوية تشمل تحريك المفاصل وتدليك الأنسجة الرخوة وتحرير اللفافة العضلية لاستعادة الحركة وتقليل الألم.',
       benefits: [
         'يحسّن حركة المفاصل',
@@ -31,7 +31,7 @@ export default function Techniques() {
     {
       icon: Activity,
       title: 'الشد اليدوي',
-      image: 'https://images.pexels.com/photos/7659573/pexels-photo-7659573.jpeg?auto=compress&cs=tinysrgb&w=800',
+      image: `${import.meta.env.BASE_URL}Pictures/manual-traction.png`,
       description: 'تقنية شد يدوي لطيفة لتخفيف الضغط عن المفاصل الفقرية وتخفيف ضغط الأعصاب وتقليل الألم في الرقبة والظهر.',
       benefits: [
         'يخفف ضغط الأعصاب',
@@ -44,7 +44,7 @@ export default function Techniques() {
     {
       icon: Waves,
       title: 'العلاج بالموجات فوق الصوتية',
-      image: `${import.meta.env.BASE_URL}ultrasound-therapy.jpg`,
+      image: `${import.meta.env.BASE_URL}Pictures/ultrasound-therapy.jpg`,
       description: 'موجات صوتية لتعزيز شفاء الأنسجة وتقليل الالتهاب وتحسين تدفق الدم إلى المناطق المصابة.',
       benefits: [
         'يسرّع إصلاح الأنسجة',
@@ -57,7 +57,7 @@ export default function Techniques() {
     {
       icon: Dumbbell,
       title: 'برامج الحركة والقوة',
-      image: 'https://images.pexels.com/photos/7659568/pexels-photo-7659568.jpeg?auto=compress&cs=tinysrgb&w=800',
+      image: `${import.meta.env.BASE_URL}Pictures/physical-therapy-exercise.webp`,
       description: 'برامج تمارين مخصصة لاستعادة الوظيفة وبناء القوة وتحسين المرونة والوقاية من الإصابات المستقبلية.',
       benefits: [
         'يزيد القوة الوظيفية',
